@@ -1,0 +1,14 @@
+#URL mapping for REST Bullseye App
+#Note: "NC" means case insensitive
+RewriteEngine on
+
+# Rule to load items
+RewriteRule ^bullseye/items$ api/itemService.php [NC]
+RewriteRule ^bullseye/items/([0-9]{1,2})$ api/itemService.php?siteid=$1 [NC]
+
+# Rule to load sites
+RewriteRule ^bullseye/sites$ api/siteService.php [NC]
+
+# Rule to load txs
+RewriteRule ^bullseye/txns$ api/txnService.php [NC]
+RewriteRule ^bullseye/txns/([0-9]{1,3})$ api/itemService.php?txnid=$1 [NC]
