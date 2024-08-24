@@ -3,7 +3,7 @@ require_once dirname(__DIR__, 1) . '/db/ConnectionManager.php';
 require_once dirname(__DIR__, 1) . '/utils/Constants.php';
 require_once dirname(__DIR__, 1) . '/utils/ChromePhp.php';
 
-// ***** Provide info for delivery (orders to pick up) ******
+// ***** Users Service ******
 $method = $_SERVER['REQUEST_METHOD'];
 
 try {
